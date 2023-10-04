@@ -29,7 +29,7 @@ describe('Color Note', () => {
             .toHaveText("Naruto\nOnepiece\nBleach");
     });
 
-    its('Delete Note', async () => {
+    it('Delete Note', async () => {
         const note = (await $('//*[@resource-id="com.socialnmobile.dictapps.notepad.color.note:id/title"]')).getText()
 
         await $('~More').click();
